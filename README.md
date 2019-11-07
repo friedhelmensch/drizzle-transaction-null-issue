@@ -3,7 +3,7 @@ don´t have meta mask or similar things active so drizzle uses the fallback.
 - yarn install
 - yarn start
 - open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-- open developer console
+- open developer console and wait a couple of seconds
 
         Error in block processing:
         TypeError: Cannot read property 'transactions' of null

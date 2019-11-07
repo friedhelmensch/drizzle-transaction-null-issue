@@ -7,7 +7,10 @@ import * as serviceWorker from "./serviceWorker";
 import { Drizzle, generateStore } from "@drizzle/store";
 import { DrizzleContext } from "@drizzle/react-plugin";
 
+import JojoToken from "./contracts/jojo.json";
+
 const options = {
+  contracts: [JojoToken],
   web3: {
     fallback: {
       url: "wss://mainnet.infura.io/ws/"

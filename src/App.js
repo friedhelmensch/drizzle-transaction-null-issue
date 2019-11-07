@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import MyComponent from "./MyComponent";
 
 import { DrizzleContext } from "@drizzle/react-plugin";
 
@@ -12,8 +13,7 @@ class App extends Component {
           if (!initialized) {
             return "Loading...";
           }
-
-          return "Oh Hai";
+          return <MyComponent drizzle={drizzle} drizzleState={drizzleState} />;
         }}
       </DrizzleContext.Consumer>
     );
